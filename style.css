@@ -968,7 +968,8 @@ section{}
 }
 
 .favorites__books_box {
-  width: calc(550px - 2px - 20px);
+  max-width: calc(550px - 2px - 20px);
+  width: 100%;
   height: calc(555px - 30px - 2px);
   border: solid 1px #000000;
   padding: 15px 0 15px 20px;
@@ -1059,7 +1060,8 @@ section{}
 
 .favorites__books_box_discription {
   margin-top: 20px;
-  width: 355px;
+  max-width: 355px;
+  width: 100%;
   color: #000;
   font-family: Inter;
   font-size: 15px;
@@ -1713,6 +1715,18 @@ footer {
 @media (max-width: 730px) {
   .favorites__pick {
     gap: 40px;
+  }
+}
+
+@media (max-width: 630px) {
+  .about__images .arrow,
+  .arrow img {
+    display: none;
+  }
+
+  .welcome div {
+    max-width: 320px;
+    width: 100%;
   }
 }
 
