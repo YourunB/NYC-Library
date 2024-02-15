@@ -6,6 +6,7 @@ body {
   margin: 0;
   padding: 0;
   background: #8E8E8E;
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -700,7 +701,8 @@ section{}
   align-items: center;
   flex-shrink: 0;
   padding: 35px 40px;
-  width: calc(600px - 80px);
+  max-width: calc(600px - 80px);
+  width: 100%;
   height: calc(220px - 70px);
   background: #0C0C0E;
   position: absolute;
@@ -1199,7 +1201,8 @@ section{}
   border: solid 3px #BB945F;
   background: #FFF;
   padding: 17px 17px 26px 17px;
-  width: 600px;
+  max-width: 600px;
+  width: 100%;
   box-sizing: border-box;
   box-shadow: 0 4px 3px 0px rgba(100, 100, 100, 0.4);
 }
@@ -1701,10 +1704,29 @@ footer {
     top: 0;
     background: white;
   }
+
+  .welcome div h3 span {
+    white-space: normal;
+  }
 }
 
 @media (max-width: 730px) {
   .favorites__pick {
     gap: 40px;
+  }
+}
+
+@media (max-width: 595px) {
+  .favorites__pick {
+    gap: 10px;
+  }
+
+  .favorites__pick {
+    flex-wrap: wrap;
+  }
+
+  .favorites__pick div {
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 }
