@@ -970,9 +970,9 @@ section{}
 .favorites__books_box {
   max-width: calc(550px - 2px - 20px);
   width: 100%;
-  height: calc(555px - 30px - 2px);
+  min-height: calc(555px - 30px - 2px - 30px);
   border: solid 1px #000000;
-  padding: 15px 0 15px 20px;
+  padding: 15px 0 40px 20px;
   margin-right: 40px;
   position: relative;
 }
@@ -1210,7 +1210,7 @@ section{}
 }
 
 .library-card-height {
-  height: 386px;
+  min-height: 386px;
 }
 
 .library-card__card {
@@ -1725,8 +1725,11 @@ footer {
   }
 
   .welcome div {
-    max-width: 320px;
-    width: 100%;
+    padding: 0;
+  }
+  
+  .coffee__menu_line {
+    display: none;
   }
 }
 
